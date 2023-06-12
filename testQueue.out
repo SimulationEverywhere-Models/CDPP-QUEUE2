@@ -1,0 +1,230 @@
+.
+Preparation Time=00:00:01:000
+.
+.
+INIT
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:00:005
+ msg.value()=33
+ lastChange()=00:00:00:000
+ nextChange()=...
+ state()=1
+ elements.front()=0
+< Control EXTERNAL
+.
+.
+EXT: IN
+.
+ elements.front()=33
+.
+holdin active: preparation time=00:00:01:000
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:00:015
+ msg.value()=1
+ lastChange()=00:00:00:005
+ nextChange()=00:00:00:990
+ state()=0
+ elements.front()=33
+< Control EXTERNAL
+.
+.
+EXT: STOP/START
+.
+.
+memorizo un timeLeft=00:00:00:990
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:00:020
+ msg.value()=0
+ lastChange()=00:00:00:015
+ nextChange()=...
+ state()=1
+ elements.front()=33
+< Control EXTERNAL
+.
+.
+EXT: STOP/START
+.
+.
+me despertaron, me despierto durante un timeLeft=00:00:00:990
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:00:040
+ msg.value()=1
+ lastChange()=00:00:00:020
+ nextChange()=00:00:00:970
+ state()=0
+ elements.front()=33
+< Control EXTERNAL
+.
+.
+EXT: STOP/START
+.
+.
+memorizo un timeLeft=00:00:00:970
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:00:050
+ msg.value()=0
+ lastChange()=00:00:00:040
+ nextChange()=...
+ state()=1
+ elements.front()=33
+< Control EXTERNAL
+.
+.
+EXT: STOP/START
+.
+.
+me despertaron, me despierto durante un timeLeft=00:00:00:970
+.
+.
+OUTPUT
+.
+.
+Control INTERNAL >
+ lastChange()=00:00:00:050
+ nextChange()=00:00:00:000
+< Control INTERNAL
+.
+00:00:01:020 out 33
+.
+Control EXTERNAL >
+ msg.time()=00:00:01:085
+ msg.value()=1
+ lastChange()=00:00:01:020
+ nextChange()=...
+ state()=1
+ elements.front()=33
+< Control EXTERNAL
+.
+.
+EXT: DONE
+.
+ elements.front()=0
+holdin active: preparation time=00:00:01:000
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:01:090
+ msg.value()=66
+ lastChange()=00:00:01:085
+ nextChange()=00:00:00:995
+ state()=0
+ elements.front()=0
+< Control EXTERNAL
+.
+.
+EXT: IN
+.
+ elements.front()=66
+.
+holdin active: preparation time=00:00:01:000
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:01:100
+ msg.value()=1
+ lastChange()=00:00:01:090
+ nextChange()=00:00:00:990
+ state()=0
+ elements.front()=66
+< Control EXTERNAL
+.
+.
+EXT: STOP/START
+.
+.
+memorizo un timeLeft=00:00:00:990
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:01:133
+ msg.value()=0
+ lastChange()=00:00:01:100
+ nextChange()=...
+ state()=1
+ elements.front()=66
+< Control EXTERNAL
+.
+.
+EXT: STOP/START
+.
+.
+me despertaron, me despierto durante un timeLeft=00:00:00:990
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:01:433
+ msg.value()=1
+ lastChange()=00:00:01:133
+ nextChange()=00:00:00:690
+ state()=0
+ elements.front()=66
+< Control EXTERNAL
+.
+.
+EXT: STOP/START
+.
+.
+memorizo un timeLeft=00:00:00:690
+.
+.
+Control EXTERNAL >
+ msg.time()=00:00:01:440
+ msg.value()=0
+ lastChange()=00:00:01:433
+ nextChange()=...
+ state()=1
+ elements.front()=66
+< Control EXTERNAL
+.
+.
+EXT: STOP/START
+.
+.
+me despertaron, me despierto durante un timeLeft=00:00:00:690
+.
+.
+OUTPUT
+.
+.
+Control INTERNAL >
+ lastChange()=00:00:01:440
+ nextChange()=00:00:00:000
+< Control INTERNAL
+.
+00:00:02:130 out 66
+.
+Control EXTERNAL >
+ msg.time()=00:00:02:300
+ msg.value()=1
+ lastChange()=00:00:02:130
+ nextChange()=...
+ state()=1
+ elements.front()=66
+< Control EXTERNAL
+.
+.
+EXT: DONE
+.
+ elements.front()=0
+holdin active: preparation time=00:00:01:000
+.
+.
+OUTPUT
+.
+.
+Control INTERNAL >
+ lastChange()=00:00:02:300
+ nextChange()=00:00:00:000
+< Control INTERNAL
+.
+00:00:03:300 out 0
